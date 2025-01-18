@@ -8,8 +8,14 @@
   "dependencyDashboard": true,
   "packageRules": [
     {
+      "automerge": true,
+      "groupName": "all non-major dev dependencies",
+      "groupSlug": "all-minor-patch-dev",
       "matchDepTypes": ["action", "devDependencies", "packageManager"],
-      "automerge": true
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
     },
     {
       "description": "v prefix workaround for action updates",
